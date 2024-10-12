@@ -104,7 +104,9 @@ class zpBranding {
 			</style>
 			<script>
 			document.addEventListener('DOMContentLoaded', function() { 
-				document.getElementById('logo').remove(); 
+				if ( document.getElementById('logo') ) {
+					document.getElementById('logo').remove();
+				}; 
 			});
 			</script>
 			<?php
